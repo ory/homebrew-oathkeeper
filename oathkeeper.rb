@@ -2,9 +2,9 @@
 class Oathkeeper < Formula
   desc ""
   homepage "https://www.ory.sh"
-  url "https://github.com/ory/oathkeeper/releases/download/v0.15.1/oathkeeper_0.15.1_macOS_64-bit.tar.gz"
-  version "0.15.1"
-  sha256 "fe5d9ad4f8b09e8db95967311621d7d6675891e1459e6b27b7bafd37ca48ad40"
+  url "https://github.com/ory/oathkeeper/releases/download/v0.15.2/oathkeeper_0.15.2_macOS_64-bit.tar.gz"
+  version "0.15.2"
+  sha256 "25e28b26cc4c34edc12219c8422c0cdb1a1d9af358c857d77ee2fbbf3e15ece6"
 
   def install
     bin.install "oathkeeper"
