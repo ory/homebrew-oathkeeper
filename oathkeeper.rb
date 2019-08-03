@@ -2,15 +2,15 @@
 class Oathkeeper < Formula
   desc ""
   homepage "https://www.ory.sh"
-  version "0.17.2-beta.1"
+  version "0.17.3-beta.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/ory/oathkeeper/releases/download/v0.17.2-beta.1/oathkeeper_0.17.2-beta.1_macOS_64-bit.tar.gz"
-    sha256 "36644225f94a612356b6a9e18bb9686a90d6f102677f8720a08aba597234e399"
+    url "https://github.com/ory/oathkeeper/releases/download/v0.17.3-beta.1/oathkeeper_0.17.3-beta.1_macOS_64-bit.tar.gz"
+    sha256 "96d358f386f0a1af0d0a362f1f846517cd1d0217984a143ab690aba1179606b2"
   elsif OS.linux?
-    url "https://github.com/ory/oathkeeper/releases/download/v0.17.2-beta.1/oathkeeper_0.17.2-beta.1_Linux_64-bit.tar.gz"
-    sha256 "b5addf93ae2dd706364d26bfeceb4fba6f7c9115470cf9cffc7994be84e2c758"
+    url "https://github.com/ory/oathkeeper/releases/download/v0.17.3-beta.1/oathkeeper_0.17.3-beta.1_Linux_64-bit.tar.gz"
+    sha256 "16a6370f47b1e96ca4b698561c91310ec292d2821bbb104ea9aa20bbeb0d4f10"
   end
 
   def install
