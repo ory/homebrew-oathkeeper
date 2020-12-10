@@ -2,24 +2,24 @@
 class Oathkeeper < Formula
   desc ""
   homepage "https://www.ory.sh"
-  version "0.38.4-beta.1"
+  version "0.38.5-beta.1.pre.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/ory/oathkeeper/releases/download/v0.38.4-beta.1/oathkeeper_0.38.4-beta.1_macOS_64-bit.tar.gz"
-    sha256 "2bf272b634dbf40397c33eb7c3eafde0a85954f8dd7f4a2976fc61ab8dcc13e7"
+    url "https://github.com/ory/oathkeeper/releases/download/v0.38.5-beta.1.pre.1/oathkeeper_0.38.5-beta.1.pre.1_macOS_64-bit.tar.gz"
+    sha256 "55455e6fc647be7aba3a9fcd2c4a356f857ab8431dd63bd81efdbdc69af1a88d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/ory/oathkeeper/releases/download/v0.38.4-beta.1/oathkeeper_0.38.4-beta.1_linux_64-bit.tar.gz"
-      sha256 "2c8bb66c5c6798cd6cfe2fef1766527350e06b7db3da3eb5794910adc122051d"
+      url "https://github.com/ory/oathkeeper/releases/download/v0.38.5-beta.1.pre.1/oathkeeper_0.38.5-beta.1.pre.1_linux_64-bit.tar.gz"
+      sha256 "f4ba9f2a97c1376860d567e3e91226697d203f54aec308e09e97745bea2a0dd2"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ory/oathkeeper/releases/download/v0.38.4-beta.1/oathkeeper_0.38.4-beta.1_linux_arm64.tar.gz"
-        sha256 "7445e46ec8094d0e86de828e8856ff206d848f34bbec4643690a6afa02d17153"
+        url "https://github.com/ory/oathkeeper/releases/download/v0.38.5-beta.1.pre.1/oathkeeper_0.38.5-beta.1.pre.1_linux_arm64.tar.gz"
+        sha256 "fa05d2799b32ebd9de08036df77a7fe8bbd65b48a8dca59b7592d33178e139ff"
       else
-        url "https://github.com/ory/oathkeeper/releases/download/v0.38.4-beta.1/oathkeeper_0.38.4-beta.1_linux_armv6.tar.gz"
-        sha256 "8321e738e39d2a0189c690efc878a2ba5345aa5c070f0dd225567c073a26f12d"
+        url "https://github.com/ory/oathkeeper/releases/download/v0.38.5-beta.1.pre.1/oathkeeper_0.38.5-beta.1.pre.1_linux_armv6.tar.gz"
+        sha256 "d5fc8a55bc7815a9b97c6cbdd9c5e292512f3fef57c07b3dfe66bd958af8cdf5"
       end
     end
   end
