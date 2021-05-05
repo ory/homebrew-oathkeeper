@@ -5,28 +5,28 @@
 class Oathkeeper < Formula
   desc ""
   homepage "https://www.ory.sh"
-  version "0.38.10-beta.2.pre.1"
+  version "0.38.10-beta.2"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/ory/oathkeeper/releases/download/v0.38.10-beta.2.pre.1/oathkeeper_0.38.10-beta.2.pre.1_macOS_64-bit.tar.gz"
-    sha256 "790c6ba108fbc7222a71b4fae8e701bbda46e85f085f531e4f0f882e8f672fa1"
+    url "https://github.com/ory/oathkeeper/releases/download/v0.38.10-beta.2/oathkeeper_0.38.10-beta.2_macOS_64-bit.tar.gz"
+    sha256 "a855321aa25bfffe2ae79195c924d7dca8e931df9131c0e928c7569068f7c8e9"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/ory/oathkeeper/releases/download/v0.38.10-beta.2.pre.1/oathkeeper_0.38.10-beta.2.pre.1_macOS_arm64.tar.gz"
-    sha256 "bd6df7aa005d374235b05f70e3411ea3f0f0d3a6718ed9ae4d59f2639d548279"
+    url "https://github.com/ory/oathkeeper/releases/download/v0.38.10-beta.2/oathkeeper_0.38.10-beta.2_macOS_arm64.tar.gz"
+    sha256 "29e00abbb500f9a6ca36a8024d55a1eb66a06fc877d9bba3875747e52824c380"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/ory/oathkeeper/releases/download/v0.38.10-beta.2.pre.1/oathkeeper_0.38.10-beta.2.pre.1_linux_64-bit.tar.gz"
-    sha256 "2fe8929b56e17d196aab85ccd2efaed79c09029063b668df3886ecfa379a1ef5"
+    url "https://github.com/ory/oathkeeper/releases/download/v0.38.10-beta.2/oathkeeper_0.38.10-beta.2_linux_64-bit.tar.gz"
+    sha256 "c274fe7b223c29b33ba4a6bd6256e93c191fb298e47649a31dafdc23987d19b8"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/ory/oathkeeper/releases/download/v0.38.10-beta.2.pre.1/oathkeeper_0.38.10-beta.2.pre.1_linux_armv6.tar.gz"
-    sha256 "fd550a69803703d785ad57a396c6e4d28fac0d9107e6c3f8acc7214b4f6a478d"
+    url "https://github.com/ory/oathkeeper/releases/download/v0.38.10-beta.2/oathkeeper_0.38.10-beta.2_linux_armv6.tar.gz"
+    sha256 "6e08ca28f215e408c93d300b13ae5ff89475f031caf30d4905937c3e98ffbbaa"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/ory/oathkeeper/releases/download/v0.38.10-beta.2.pre.1/oathkeeper_0.38.10-beta.2.pre.1_linux_arm64.tar.gz"
-    sha256 "937afff52dd3686dfc5a08d8e5b6189c9099edf8212558a2d0266890c725aa5b"
+    url "https://github.com/ory/oathkeeper/releases/download/v0.38.10-beta.2/oathkeeper_0.38.10-beta.2_linux_arm64.tar.gz"
+    sha256 "1e6b35d0ed9a40b38e777fe142a14269d3ef090d8c7fe08e7b715ed3d8acc596"
   end
 
   def install
